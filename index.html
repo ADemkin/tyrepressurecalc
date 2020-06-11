@@ -1,0 +1,139 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <title>Pressure calc</title>
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style type="text/css">
+            .bg-grey {
+                background-color: #EEE;
+            }
+        </style>
+    </head>
+    <body class="bg-light">
+        <div class="page-header text-center mb-2">
+            <h1 class="display-4">Tyre Pressure Calculator</h1>
+            <small>get you best grip ever!</small>
+        </div>
+        <div class="container bg-grey border border-secondary rounded ">
+            <div class="form">
+                <div class="col-sm-12 my-3">
+                    <div class="input-group input-group-lg">
+                        <input
+                            type="number"
+                            id="weight"
+                            value="75.0"
+                            min='20'
+                            max='150'
+                            maxlength='3'
+                            step="0.1"
+                            size="4"
+                            class="form-control"
+                            ><span class="input-group-addon">kg</span>
+                    </div>
+                    <div class="btn-toolbar" role="toolbar">
+                        <div
+                            class="my-3 col-xl-4 col-lg-5 col-md-7 btn-group btn-group-lg"
+                            role="group"
+                            data-toggle="buttons"
+                            id="width"
+                        >
+                            <label class="btn btn-primary active">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    value="23"
+                                    autocomplete="off"
+                                    checked
+                                >23c
+                            </label>
+                            <label class="btn btn-primary">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    value="25"
+                                    autocomplete="off"
+                                >25c
+                            </label>
+                            <label class="btn btn-primary">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    value="28"
+                                    autocomplete="off"
+                                >28c
+                            </label>
+                            <label class="btn btn-primary">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    value="30"
+                                    autocomplete="off"
+                                >30c
+                            </label>
+                            <label class="btn btn-primary">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    value="32"
+                                    autocomplete="off"
+                                >32c
+                            </label>
+                        </div>
+                        <div
+                            class="my-3 col-xl-1 col-lg-2 col-md-4 btn-group btn-group-lg"
+                            role="group"
+                            data-toggle="buttons"
+                            id="system"
+                        >
+                            <label class="btn btn-primary active">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    autocomplete="off"
+                                    value="psi"
+                                    checked
+                                >PSI
+                            </label>
+                            <label class="btn btn-primary">
+                                <input
+                                    type="radio"
+                                    class="toggle"
+                                    name="options"
+                                    autocomplete="off"
+                                    value="bar"
+                                >BAR
+                            </label>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <div class="input-group input-group-lg">
+                            <input
+                                 type="text"
+                                class="form-control"
+                                id="resultPressure"
+                                value="calculating..."
+                                readonly
+                            ></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+        <script src="script.js" type="text/javascript"></script>
+    </body>
+</html>
